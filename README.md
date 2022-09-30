@@ -1,1 +1,2 @@
-# Front-Web
+# discoverio-web
+ website for discoverio project
