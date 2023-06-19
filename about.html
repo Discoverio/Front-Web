@@ -81,71 +81,50 @@
     <h1>About Discover.Io</h1>
 
 
-    <div style="top:-58vh;position: relative;">
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/17.jpg" alt="" srcset="" class="">
-        <img src="assets/img/18.jpg" alt="" srcset="" class="">
-        <img src="assets/img/19.jpg" alt="" srcset="" class="">
-        <img src="assets/img/20.jpg" alt="" srcset="" class="">
-        <img src="assets/img/21.jpg" alt="" srcset="" class="">
-        <img src="assets/img/22.jpg" alt="" srcset="" class="">
-        <img src="assets/img/23.jpg" alt="" srcset="" class="">
-        <img src="assets/img/24.jpg" alt="" srcset="" class="">
-        <img src="assets/img/9.jpg" alt="" srcset="" class="">
-        <img src="assets/img/10.jpg" alt="" srcset="" class="">
-        <img src="assets/img/11.jpg" alt="" srcset="" class="">
-        <img src="assets/img/12.jpg" alt="" srcset="" class="">
-        <img src="assets/img/13.jpg" alt="" srcset="" class="">
-        <img src="assets/img/14.jpg" alt="" srcset="" class="">
-        <img src="assets/img/15.jpg" alt="" srcset="" class="">
-        <img src="assets/img/16.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/9.jpg" alt="" srcset="" class="">
-        <img src="assets/img/10.jpg" alt="" srcset="" class="">
-        <img src="assets/img/11.jpg" alt="" srcset="" class="">
-        <img src="assets/img/12.jpg" alt="" srcset="" class="">
-        <img src="assets/img/13.jpg" alt="" srcset="" class="">
-        <img src="assets/img/14.jpg" alt="" srcset="" class="">
-        <img src="assets/img/15.jpg" alt="" srcset="" class="">
-        <img src="assets/img/16.jpg" alt="" srcset="" class="">
-        <img src="assets/img/17.jpg" alt="" srcset="" class="">
-        <img src="assets/img/18.jpg" alt="" srcset="" class="">
-        <img src="assets/img/19.jpg" alt="" srcset="" class="">
-        <img src="assets/img/20.jpg" alt="" srcset="" class="">
-        <img src="assets/img/21.jpg" alt="" srcset="" class="">
-        <img src="assets/img/22.jpg" alt="" srcset="" class="">
-        <img src="assets/img/23.jpg" alt="" srcset="" class="">
-        <img src="assets/img/24.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/1.jpg" alt="" srcset="" class="">
-        <img src="assets/img/2.jpg" alt="" srcset="" class="">
-        <img src="assets/img/3.jpg" alt="" srcset="" class="">
-        <img src="assets/img/4.jpg" alt="" srcset="" class="">
-        <img src="assets/img/5.jpg" alt="" srcset="" class="">
-        <img src="assets/img/6.jpg" alt="" srcset="" class="">
-        <img src="assets/img/7.jpg" alt="" srcset="" class="">
-        <img src="assets/img/8.jpg" alt="" srcset="" class="">
-        <img src="assets/img/25.jpg" alt="" srcset="" class="">
-        <img src="assets/img/26.jpg" alt="" srcset="" class="">
-        <img src="assets/img/27.jpg" alt="" srcset="" class="">
-        <img src="assets/img/28.jpg" alt="" srcset="" class="">
-        <img src="assets/img/29.jpg" alt="" srcset="" class="">
-        <img src="assets/img/30.jpg" alt="" srcset="" class="">
-        <img src="assets/img/31.jpg" alt="" srcset="" class="">
-        <img src="assets/img/32.jpg" alt="" srcset="" class="">
-      </div>      
-
-
-    </div>
-
-
+  <script>// Créer une fonction pour générer le code HTML
+    function generateAlbumHTML() {
+      var list1 = [
+        '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg',
+        '8.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '30.jpg', '31.jpg', '32.jpg'
+      ];
+      
+      var list2 = [
+        '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg',
+        '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg'
+      ];
+      
+      var list3 = [
+        '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg',
+        '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg'
+      ];
+    
+      var albums = [list3, list2, list1];
+      var albumCount = albums.length;
+      var html = '<div style="top:-58vh;position: relative;">\n';
+    
+      for (var i = 0; i < albumCount; i++) {
+        html += '  <div class="fixed-row album_cover">\n';
+    
+        var currentAlbum = albums[i];
+        var imagesPerAlbum = currentAlbum.length;
+    
+        for (var j = 0; j < imagesPerAlbum; j++) {
+          html += '    <img src="assets/img/' + currentAlbum[j] + '" alt="album_cover_' + currentAlbum[j] + '" srcset="" class="">\n';
+        }
+    
+        html += '  </div>\n';
+      }
+    
+      html += '</div>\n';
+    
+      return html;
+    }
+    
+    var albumHTML = generateAlbumHTML();
+    document.write(albumHTML);
+    
+  </script>
   </div>
-
   <!-- main page  -->
   <div class="page">
 
@@ -157,28 +136,38 @@
         <div class="dec-pancake">
           <div class="dec-box-pancake text-center">
             <div class="">
-              <img width="40%" src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80" alt="">
+              <img width="40%" src="assets/img/team/74133461.png" alt="">
             </div>
             <h3>Simon MANIEZ</h3>
           </div>
           <div class="dec-box-pancake text-center">
             <div class="">
-              <img width="40%" src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80" alt="">
+              <img width="40%" src="assets/img/team/10175551.png" alt="">
+            </div>
+            <h3>Yoann PETIT</h3>
+          </div>          
+          <div class="dec-box-pancake text-center">
+            <div class="">
+              <img width="40%" src="assets/img/team/94178423.png" alt="">
             </div>
             <h3>Alexandre DEVOS</h3>
           </div>
-          <div class="dec-box-pancake text-center">
-            <div class="">
-              <img width="40%" src="https://media-exp1.licdn.com/dms/image/C4E03AQFINmDX_Ua0mg/profile-displayphoto-shrink_800_800/0/1652901730731?e=1669852800&v=beta&t=6G69EWJ-0FgTiGVKsFMmc6x2e4hovmUeCncjXX4DP7M" alt="">
-            </div>
-            <h3>Yoann PETIT</h3>
-          </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque animi deleniti nesciunt
-            sapiente quos consequuntur eum excepturi doloribus autem voluptates id, voluptatem ratione cum
-            necessitatibus, beatae praesentium numquam soluta? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam accusantium cupiditate, eaque rerum hic cumque libero adipisci iste molestiae impedit dignissimos harum quae suscipit commodi dicta earum magnam, ab eos?</p>
-            <img src="assets/img/2i_Tech Academy.png" alt="" width="15%">
-          </div>
+          <p>Discoverio is a flagship project for the 2021-2023 school year. It has been successfully conducted by:</p>
 
+          <ul>
+            <li>Simon Maniez : Developer, Designer, Tester</li>
+            <li>Yoann Petit : Client, Project Manager, Developer, Designer, Tester.</li>
+            <li>Alexandre Devos (Left the group in early 2023 to pursue his own flagship project)</li>
+          </ul>
+          <br>
+
+          <p>The current project is in version V1 and currently only has the music proposal.</p><br>
+          <br>
+
+            
+          </div>
+          <div class="text-center"><img src="assets/img/2i_Tech Academy.png" alt="" width="14%"></div>
+          
       </div>
 
 
@@ -241,9 +230,7 @@
     <div class="container p2">
       <div class="row">
         <div class="column middlescreen m1">
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab aliquam harum ea eos exercitationem quos
-          voluptatibus doloribus. Tempora autem aliquid id non blanditiis molestiae doloremque aperiam aut nisi cumque!
+          This project is being carried out as part of the professional qualification for Application Designers and Developers in France, providing students with valuable practical experience. They demonstrate their ability to create innovative, user-friendly applications by collaborating on design, coding, testing, and deployment in a team environment.
           </p>
         </div>
 
@@ -254,11 +241,11 @@
         <div class="column middlescreen">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            <li><a href="https://discoverio.fr/about/">About Us</a></li>
+            <li><a href="https://discoverio.fr/contact/">Contact Us</a></li>
+            <li><a href="https://discoverio.fr/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="https://discoverio.fr/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://discoverio.fr/sitemap/">Sitemap</a></li>
           </ul>
         </div>
       </div>
@@ -267,7 +254,7 @@
     <div class="container">
       <div class="row">
         <div class="column middlescreen p2">
-          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
             <a href="#">Discover io</a>.
           </p>
         </div>

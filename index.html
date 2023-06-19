@@ -86,126 +86,65 @@
       <div class="column middlescreen p2 m1"> <input type="button" class="app" value="Open desktop app"></div>
 
     </div>
-
-    <div style="top:-66%;position: relative;">
-      <div class="fixed-row album_cover">
-        <img src="assets/img/1.jpg" alt="" srcset="" class="">
-        <img src="assets/img/2.jpg" alt="" srcset="" class="">
-        <img src="assets/img/3.jpg" alt="" srcset="" class="">
-        <img src="assets/img/4.jpg" alt="" srcset="" class="">
-        <img src="assets/img/5.jpg" alt="" srcset="" class="">
-        <img src="assets/img/6.jpg" alt="" srcset="" class="">
-        <img src="assets/img/7.jpg" alt="" srcset="" class="">
-        <img src="assets/img/8.jpg" alt="" srcset="" class="">
-        <img src="assets/img/25.jpg" alt="" srcset="" class="">
-        <img src="assets/img/26.jpg" alt="" srcset="" class="">
-        <img src="assets/img/27.jpg" alt="" srcset="" class="">
-        <img src="assets/img/28.jpg" alt="" srcset="" class="">
-        <img src="assets/img/29.jpg" alt="" srcset="" class="">
-        <img src="assets/img/30.jpg" alt="" srcset="" class="">
-        <img src="assets/img/31.jpg" alt="" srcset="" class="">
-        <img src="assets/img/32.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/9.jpg" alt="" srcset="" class="">
-        <img src="assets/img/10.jpg" alt="" srcset="" class="">
-        <img src="assets/img/11.jpg" alt="" srcset="" class="">
-        <img src="assets/img/12.jpg" alt="" srcset="" class="">
-        <img src="assets/img/13.jpg" alt="" srcset="" class="">
-        <img src="assets/img/14.jpg" alt="" srcset="" class="">
-        <img src="assets/img/15.jpg" alt="" srcset="" class="">
-        <img src="assets/img/16.jpg" alt="" srcset="" class="">
-        <img src="assets/img/17.jpg" alt="" srcset="" class="">
-        <img src="assets/img/18.jpg" alt="" srcset="" class="">
-        <img src="assets/img/19.jpg" alt="" srcset="" class="">
-        <img src="assets/img/20.jpg" alt="" srcset="" class="">
-        <img src="assets/img/21.jpg" alt="" srcset="" class="">
-        <img src="assets/img/22.jpg" alt="" srcset="" class="">
-        <img src="assets/img/23.jpg" alt="" srcset="" class="">
-        <img src="assets/img/24.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/17.jpg" alt="" srcset="" class="">
-        <img src="assets/img/18.jpg" alt="" srcset="" class="">
-        <img src="assets/img/19.jpg" alt="" srcset="" class="">
-        <img src="assets/img/20.jpg" alt="" srcset="" class="">
-        <img src="assets/img/21.jpg" alt="" srcset="" class="">
-        <img src="assets/img/22.jpg" alt="" srcset="" class="">
-        <img src="assets/img/23.jpg" alt="" srcset="" class="">
-        <img src="assets/img/24.jpg" alt="" srcset="" class="">
-        <img src="assets/img/9.jpg" alt="" srcset="" class="">
-        <img src="assets/img/10.jpg" alt="" srcset="" class="">
-        <img src="assets/img/11.jpg" alt="" srcset="" class="">
-        <img src="assets/img/12.jpg" alt="" srcset="" class="">
-        <img src="assets/img/13.jpg" alt="" srcset="" class="">
-        <img src="assets/img/14.jpg" alt="" srcset="" class="">
-        <img src="assets/img/15.jpg" alt="" srcset="" class="">
-        <img src="assets/img/16.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/25.jpg" alt="" srcset="" class="">
-        <img src="assets/img/26.jpg" alt="" srcset="" class="">
-        <img src="assets/img/27.jpg" alt="" srcset="" class="">
-        <img src="assets/img/28.jpg" alt="" srcset="" class="">
-        <img src="assets/img/29.jpg" alt="" srcset="" class="">
-        <img src="assets/img/30.jpg" alt="" srcset="" class="">
-        <img src="assets/img/31.jpg" alt="" srcset="" class="">
-        <img src="assets/img/32.jpg" alt="" srcset="" class="">
-        <img src="assets/img/1.jpg" alt="" srcset="" class="">
-        <img src="assets/img/2.jpg" alt="" srcset="" class="">
-        <img src="assets/img/3.jpg" alt="" srcset="" class="">
-        <img src="assets/img/4.jpg" alt="" srcset="" class="">
-        <img src="assets/img/5.jpg" alt="" srcset="" class="">
-        <img src="assets/img/6.jpg" alt="" srcset="" class="">
-        <img src="assets/img/7.jpg" alt="" srcset="" class="">
-        <img src="assets/img/8.jpg" alt="" srcset="" class="">
-      </div>
-
-      <div class="fixed-row album_cover">
-        <img src="assets/img/20.jpg" alt="" srcset="" class="">
-        <img src="assets/img/11.jpg" alt="" srcset="" class="">
-        <img src="assets/img/12.jpg" alt="" srcset="" class="">
-        <img src="assets/img/13.jpg" alt="" srcset="" class="">
-        <img src="assets/img/15.jpg" alt="" srcset="" class="">
-        <img src="assets/img/17.jpg" alt="" srcset="" class="">
-        <img src="assets/img/18.jpg" alt="" srcset="" class="">
-        <img src="assets/img/23.jpg" alt="" srcset="" class="">
-        <img src="assets/img/9.jpg" alt="" srcset="" class="">
-        <img src="assets/img/10.jpg" alt="" srcset="" class="">
-        <img src="assets/img/24.jpg" alt="" srcset="" class="">
-        <img src="assets/img/21.jpg" alt="" srcset="" class="">
-        <img src="assets/img/22.jpg" alt="" srcset="" class="">
-        <img src="assets/img/16.jpg" alt="" srcset="" class="">    
-        <img src="assets/img/14.jpg" alt="" srcset="" class="">
-        <img src="assets/img/19.jpg" alt="" srcset="" class="">    
-      </div>
+  <script>// Créer une fonction pour générer le code HTML
+    function generateAlbumHTML() {
+      var list1 = [
+        '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg',
+        '8.jpg', '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '30.jpg', '31.jpg', '32.jpg'
+      ];
       
-      <div class="fixed-row album_cover">
-        <img src="assets/img/1.jpg" alt="" srcset="" class="">
-        <img src="assets/img/2.jpg" alt="" srcset="" class="">
-        <img src="assets/img/3.jpg" alt="" srcset="" class="">
-        <img src="assets/img/4.jpg" alt="" srcset="" class="">
-        <img src="assets/img/5.jpg" alt="" srcset="" class="">
-        <img src="assets/img/6.jpg" alt="" srcset="" class="">
-        <img src="assets/img/7.jpg" alt="" srcset="" class="">
-        <img src="assets/img/8.jpg" alt="" srcset="" class="">
-        <img src="assets/img/25.jpg" alt="" srcset="" class="">
-        <img src="assets/img/26.jpg" alt="" srcset="" class="">
-        <img src="assets/img/27.jpg" alt="" srcset="" class="">
-        <img src="assets/img/28.jpg" alt="" srcset="" class="">
-        <img src="assets/img/29.jpg" alt="" srcset="" class="">
-        <img src="assets/img/30.jpg" alt="" srcset="" class="">
-        <img src="assets/img/31.jpg" alt="" srcset="" class="">
-        <img src="assets/img/32.jpg" alt="" srcset="" class="">
-      </div>      
-    </div>
-
-
+      var list2 = [
+        '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg',
+        '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg'
+      ];
+      
+      var list3 = [
+        '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg',
+        '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg'
+      ];
+      
+      var list4 = [
+        '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '30.jpg', '31.jpg', '32.jpg',
+        '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'
+      ];
+      
+      var list5 = [
+        '20.jpg', '11.jpg', '12.jpg', '13.jpg', '15.jpg', '17.jpg', '18.jpg', '23.jpg',
+        '9.jpg', '10.jpg', '24.jpg', '21.jpg', '22.jpg', '16.jpg', '14.jpg', '19.jpg'
+      ];
+      
+      var list6 = [
+        '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg',
+        '25.jpg', '26.jpg', '27.jpg', '28.jpg', '29.jpg', '30.jpg', '31.jpg', '32.jpg'
+      ];
+    
+      var albums = [list1, list2, list3, list4, list5, list6];
+      var albumCount = albums.length;
+      var html = '<div style="top:-66%;position: relative;">\n';
+    
+      for (var i = 0; i < albumCount; i++) {
+        html += '  <div class="fixed-row album_cover">\n';
+    
+        var currentAlbum = albums[i];
+        var imagesPerAlbum = currentAlbum.length;
+    
+        for (var j = 0; j < imagesPerAlbum; j++) {
+          html += '    <img src="assets/img/' + currentAlbum[j] + '" alt="album_cover_' + currentAlbum[j] + '" srcset="" class="">\n';
+        }
+    
+        html += '  </div>\n';
+      }
+    
+      html += '</div>\n';
+    
+      return html;
+    }
+    
+    var albumHTML = generateAlbumHTML();
+    document.write(albumHTML);
+    
+  </script>
   </div>
-
   <!-- main page  -->
   <div class="page">
 
@@ -341,9 +280,7 @@
             <i class="large_icon fa-solid fa-person-hiking" aria-hidden="true"></i>
             <h3>Develop new passions</h3>
           </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae eaque animi deleniti nesciunt
-            sapiente quos consequuntur eum excepturi doloribus autem voluptates id, voluptatem ratione cum
-            necessitatibus, beatae praesentium numquam soluta? </p>
+          <p>Discover.io is an app for daily discoveries: music, movies, series, and more! It breaks user biases, pushing them to explore new, diverse things and potentially find new passions!</p>
         </div>
 
       </div>
@@ -408,9 +345,7 @@
     <div class="container p2">
       <div class="row">
         <div class="column middlescreen m1">
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab aliquam harum ea eos exercitationem quos
-          voluptatibus doloribus. Tempora autem aliquid id non blanditiis molestiae doloremque aperiam aut nisi cumque!
+          This project is being carried out as part of the professional qualification for Application Designers and Developers in France, providing students with valuable practical experience. They demonstrate their ability to create innovative, user-friendly applications by collaborating on design, coding, testing, and deployment in a team environment.
           </p>
         </div>
 
@@ -421,11 +356,11 @@
         <div class="column middlescreen">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            <li><a href="https://discoverio.fr/about/">About Us</a></li>
+            <li><a href="https://discoverio.fr/contact/">Contact Us</a></li>
+            <li><a href="https://discoverio.fr/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="https://discoverio.fr/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://discoverio.fr/sitemap/">Sitemap</a></li>
           </ul>
         </div>
       </div>
@@ -434,7 +369,7 @@
     <div class="container">
       <div class="row">
         <div class="column middlescreen p2">
-          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
             <a href="#">Discover io</a>.
           </p>
         </div>
